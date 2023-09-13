@@ -13,7 +13,7 @@ pipeline {
             }
             post {
                 success {
-                    emailext body: 'Unit and integration tests were successful!', subject: 'Stage Success: Unit and Integration Tests', to: 'lovepreet.singh10235@gmail.com'
+                    emailext body: 'Unit and integration tests were a successful!', subject: 'Stage Success: Unit and Integration Tests', to: 'lovepreet.singh10235@gmail.com'
                 }
                 failure {
                     emailext body: 'Unit and integration tests failed. Please check logs.', subject: 'Stage Failure: Unit and Integration Tests', to: 'lovepreet.singh10235@gmail.com'
@@ -62,6 +62,5 @@ pipeline {
         failure {
             emailext body: 'The pipeline failed. Please check logs.', subject: 'Pipeline Failure', to: 'lovepreet.singh10235@gmail.com'
         }
-        print ("Hello")
     }
 }

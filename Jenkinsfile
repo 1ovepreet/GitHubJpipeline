@@ -62,5 +62,6 @@ pipeline {
         failure {
             emailext body: 'The pipeline failed. Please check logs.', subject: 'Pipeline Failure', to: 'lovepreet.singh10235@gmail.com'
         }
+        print ("Hello")
     }
 }

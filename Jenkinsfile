@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building project...'
+                echo 'Building the project...'
             }
         }
         stage('Unit and Integration Tests') {

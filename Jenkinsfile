@@ -7,7 +7,7 @@ pipeline {
                 echo 'Building the project...'
             }
         }
-        stage('Unit and Integration Tests') {
+        stage('Unit and Integraftion Tests') {
             steps {
                 echo 'Running unit and integration tests...'
             }

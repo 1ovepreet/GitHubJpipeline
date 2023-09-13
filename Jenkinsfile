@@ -31,7 +31,7 @@ pipeline {
             }
             post {
                 success {
-                    emailext body: 'Security scan was a successful!', subject: 'Stage Success: Security Scan', to: 'lovepreet.singh10235@gmail.com'
+                    emailext body: 'Security scan was successful!', subject: 'Stage Success: Security Scan', to: 'lovepreet.singh10235@gmail.com'
                 }
                 failure {
                     emailext body: 'Security scan failed. Please check logs.', subject: 'Stage Failure: Security Scan', to: 'lovepreet.singh10235@gmail.com'
